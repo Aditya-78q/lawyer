@@ -223,9 +223,18 @@
        ✅ Changed: "Connect With Me" → "Contact" (solicitation language removed)
        ================================================================ -->
  <aside id="ftco-hero" class="js-fullheight">
-		<video autoplay muted loop playsinline poster="images/hero_2.jpg" id="bg-video">
-			<source src="images/bgvideo.mp4" type="video/mp4">
-		</video>
+		 <video autoplay muted loop playsinline poster="images/hero_2.jpg" id="bg-video">
+      <source src="https://www.image2url.com/r2/default/videos/1792308254173-0321d9a0-24a7-4dd3-909e-d863f1e6ce4f.mp4"
+        type="video/mp4">
+    </video>
+    <script>
+      var video = document.getElementById('bg-video');
+      video.play();
+      video.addEventListener('ended', function () {
+        this.currentTime = 0;
+        this.play();
+      }, false);
+    </script>
 		<div class="flexslider js-fullheight">
 			<ul class="slides">
 		   	<li>
